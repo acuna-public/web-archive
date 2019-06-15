@@ -1,0 +1,32 @@
+	{
+		"manifest_version": 2,
+		"update_url": "https://clients2.google.com/service/update2/crx",
+		"name": "Web Archive",
+		"description": "Adds web.archive.org button to the toolbar",
+		"version": "1.0",
+		
+		"icons": {
+			"16": "icon.png",
+			"32": "icon@2x.png",
+			"48": "icon@2x.png",
+			"64": "icon@2x.png",
+			"128": "icon@2x.png"
+		},
+		
+		"permissions": [
+			"tabs",
+			"contextMenus"
+		],
+		
+		"browser_action": {
+			"default_icon": "icon.png",
+			"default_title": "Show in Web Archive"
+		},
+		
+		"background": {
+			"scripts": [
+				"content.js"
+			]
+		}
+		
+	}
